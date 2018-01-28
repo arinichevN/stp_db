@@ -227,11 +227,13 @@ function EditProg() {
                     cursor_blocker.disable();
                     break;
                 case this.ACTION.SAVE:
-                    this.resetContProg();
-                    break;
-                case this.ACTION.RESET:
                     this.dataIniToData();
                     cursor_blocker.disable();
+                   //this.resetContProg();
+                    break;
+                case this.ACTION.RESET:
+//                    this.dataIniToData();
+//                    cursor_blocker.disable();
                     break;
                 default:
                     console.log("confirm: unknown action: " + action);
